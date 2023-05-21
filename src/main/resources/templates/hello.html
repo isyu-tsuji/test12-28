@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Hello</title>
+</head>
+
+<body>
+    <h1 th:text="${title}"></h1>
+    <p>
+        <div th:text="${message}" />
+        <a th:href="@{/next}">次のページ</a>
+    </p>
+</body>
+</html>
