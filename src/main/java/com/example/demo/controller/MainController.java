@@ -15,8 +15,9 @@ public class MainController {
     }
 
     @RequestMapping("/next")
-    public String nextHello(Model model) {
+    public String nextHello(String userId, Model model) {
         model.addAttribute("title", "遷移完了");
+        model.addAttribute("userId", userId);
         return "next";
     }
 

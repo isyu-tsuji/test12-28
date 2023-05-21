@@ -7,8 +7,15 @@
 
 <body>
     <h1 th:text="${title}"></h1>
-    <p>
+    <form action="/next" method="get">
         <div th:text="${message}" />
+        ユーザーID:<input type="text" name="userId" />
+        パスワード:<input type="password" name="password" />
+        <input type="submit" value="送信" />
+    </form>
+
+
+        <br>
         <a th:href="@{/next}">次のページ</a>
     </p>
 </body>
