@@ -24,4 +24,10 @@ public class MainController {
     public String next2Hello() {
         return "next2";
     }
+
+    @RequestMapping("/final")
+    public String finHello() {
+        return "final";
+    }
+
 }
